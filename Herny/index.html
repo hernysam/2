@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Adult Content Site</title>
+        <link rel="stylesheet" href="styles.css">
+    
+        <!-- Link to Web Manifest for PWA -->
+        <link rel="manifest" href="manifest.json">
+    
+        <!-- Apple Touch Icon for Home Screen -->
+        <link rel="apple-touch-icon" href="herny.png">
+    
+        <!-- Meta Tags for iOS PWA Behavior -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="Adult Site">
+    </head>
+    
+    <title>Adult Content Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Age Verification Modal -->
+    <div id="age-verification" class="modal">
+        <h1>Age Verification</h1>
+        <p>You must be 18+, or Lily to enter this site.</p>
+        <button onclick="document.getElementById('age-verification').style.display='none'">I am 18 or older</button>
+    </div>
+
+    <!-- Account Modal -->
+    <div id="account-modal" class="modal">
+        <div class="modal-content" id="login-form">
+            <h2>Login (Coming In Future)</h2>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button onclick="alert('Logged in!');">Login</button>
+            <div class="modal-footer">
+                <p>Don't have an account? <a onclick="toggleForms()">Sign up (Coming In Future)</a></p>
+            </div>
+        </div>
+        <div class="modal-content" id="signup-form" style="display: none;">
+            <h2>Sign Up</h2>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button onclick="alert('Account created!');">Sign Up</button>
+            <div class="modal-footer">
+                <p>Already have an account? <a onclick="toggleForms()">Log in</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="herny.png" alt="Site Logo">
+        </div>
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a onclick="document.getElementById('account-modal').style.display='flex'">My Account</a>
+        </nav>
+    </header>
+
+    <!-- Media Section with Videos -->
+    <section>
+        <h2>Featured Videos</h2>
+        <div class="video-container">
+            <h3>Herny Boy Caught</h3>
+            <iframe src="https://drive.google.com/file/d/1Tg4czvUL4riHp90xXT3v_s4LskjGrhQV/preview" allow="autoplay"></iframe>
+
+            <h3>Herny Boy Talking To Eliana</h3>
+            <iframe src="https://drive.google.com/file/d/128ddCwl1gmcoHkOSvzezV3xXkVQ3wJO2/preview" allow="autoplay"></iframe>
+
+            <h3>Herny Boy Being Herny</h3>
+            <iframe src="https://drive.google.com/file/d/15BnDT3oRoVzBlXVUN4N_k6Nt1PBcDSfw/preview" allow="autoplay"></iframe>
+
+            <h3>Herny Boy Taking Tuff Flick</h3>
+            <iframe src="https://drive.google.com/file/d/1sGJF3PB3BWfKDEmyAjni6YOK6MdPM-S_/preview" allow="autoplay"></iframe>
+
+            <h3>Herny Boy Unwashed Nike Tech Flick</h3>
+            <iframe src="https://drive.google.com/file/d/1j8JKm_jbjRg03TNDAHvqKNRpXyg86m0s/preview" allow="autoplay"></iframe>
+
+            <h3>Herny Boy In His Favorite Car Tesla</h3>
+            <iframe src="https://drive.google.com/file/d/1ku09uz-2X01_WscUt0kBN_7tSXSEEdzw/preview" allow="autoplay"></iframe>
+
+            <h3>Herny Boy Fastest Run To Lily</h3>
+            <iframe src="https://drive.google.com/file/d/1_wTOTjm1rq8XNPNQOTlGg_SD2EoJGEJy/preview" allow="autoplay"></iframe>
+
+            <h3>Bare-Foot Herny Boy</h3>
+            <iframe src="https://drive.google.com/file/d/1MdnpV_budwJrSicjcT0Pp3aNXi35DvZY/preview" allow="autoplay"></iframe>
+
+            <h3>Herny Boy Tuffest Fit</h3>
+            <iframe src="https://drive.google.com/file/d/1EtEVb-8x2YxDNNBc4gz5CmTKG1UTDjYD/preview" allow="autoplay"></iframe>
+
+            <h3>Herny Boy Nazi Hatler</h3>
+            <iframe src="https://drive.google.com/file/d/1qaeHkEQ4akdRHYlROaFeGyQFdV3R2A_G/preview" allow="autoplay"></iframe>
+
+            <h3>Herny Boy Compton Crip Gang</h3>
+            <iframe src="https://drive.google.com/file/d/1_Oqyb5iiaARiDtURSwZseX_b06DugGmt/preview" allow="autoplay"></iframe>
+
+            <h3>Herny Boy Takes Toof Flick</h3>
+            <iframe src="https://drive.google.com/file/d/1dCUKpHPqgvkR5h8ZMdUKmpnHma5htLif/preview" allow="autoplay"></iframe>
+
+            <h3>Herny Boy Pointing Like Muham</h3>
+            <iframe src="https://drive.google.com/file/d/1k8Tk8oVJU77x9fSanm-UlELbEnHH0UpZ/preview" allow="autoplay"></iframe>
+
+            <h3>Herny Boy Carried To Champs</h3>
+            <iframe src="https://drive.google.com/file/d/14vTIvORjthiazfcYFimDcI3HOR46HZB2/preview" allow="autoplay"></iframe>
+
+            <h3>Herny Boy Eating Dahl Chawal</h3>
+            <iframe src="https://drive.google.com/file/d/1KxxpD3D11o-X1r0rMpWyURrZkzpF31Qg/preview" allow="autoplay"></iframe>
+
+            <h3>Herny Boy Wishes Happy Birthday From India</h3>
+            <iframe src="https://drive.google.com/file/d/1BQvr3wfeA_WALz4c1RGGkJNnpAJrtQvW/preview" allow="autoplay"></iframe>
+
+            <h3>Herny Boy Creepy Ahh Smile</h3>
+            <iframe src="https://drive.google.com/file/d/1_jmWCKrTGbH31mixD8_QCHIjz4XMbgcC/preview" allow="autoplay"></iframe>
+
+            <h3>Herny Boy Littleton Academy Slander</h3>
+            <iframe src="https://drive.google.com/file/d/1_cBepjA6bmh1ehqVWb5UU1gNOnWTdHWi/preview" allow="autoplay"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Herny Boy Samrath Productions. All Rights Reserved To Ventura Ct.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
